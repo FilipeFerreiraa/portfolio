@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./js/index.js" defer></script>
+    <title>Portfólio</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <button class="mobile-button" onclick="toggle_menu()"><img id="mobile-button" src="./assets/img/menu-icon.png" alt="menu icon"></button>
+      <div class="header-social-medias">
+        <a href="https://www.linkedin.com/in/filipeferreira20/" target="_blank"><img src="./assets/img/icon-linkedin.png" alt="linkedin icon"></a>
+        <a href="https://github.com/FilipeFerreiraa" target="_blank"><img src="./assets/img/icon-github.png" alt="github icon"></a>
+      </div>
+    </header>
+    <menu class="mobile-menu-container menu-closed">
+      <ul>
+        <a href="#home" onclick="toggle_menu()"><li>Home</li></a>
+        <a href="#about" onclick="toggle_menu()"><li>Sobre Mim</li></a>
+        <a href="#skills" onclick="toggle_menu()"><li>Habilidades</li></a>
+        <a href="#projects" onclick="toggle_menu()"><li>Projetos</li></a>
+        <a href="#contact" onclick="toggle_menu()"><li>Contatos</li></a>
+      </ul>
+    </menu>
+    <div class="introduction-div-container" id="home">
+      <div class="introduction-div-content">
+        <h1>Olá, eu sou</h1>
+        <h2>Filipe Ferreira</h2>
+        <h3>Estudante de Ciência da Computação</h3>
+      </div>
+    </div>
+    <div class="personal-content-container">
+      <a class="personal-cv-download" href="https://drive.google.com/u/0/uc?id=1eJ0XikXi6Gz8XlfkspUXGUsw_2G_Hqgk&export=download">Donwload CV</a>
+      <div class="personal-image">
+        <img src="./assets/img/profile-picture.jpg" alt="user picture">
+      </div>
+    </div>
+    <main class="about-container" id="#about">
+      <div class="about-title title">
+        <h1>Sobre Mim</h1>
+      </div>
+      <div class="about-content">
+        <p>
+          Olá, me chamo Filipe, tenho 22 anos e estou sempre em busca de novos conhecimentos.
+          Tenho experiência na área de produção industrial adquirida em meu período na Lorenzetti,
+          onde fiz operação de máquinas, montagem de produtos como chuveiros e torneiras, e também ajudei no setor de qualidade da empresa.
+          Em 2022 iniciei um curso técnico de programação na Alura, onde tive aprendizado em diversas linguagens e tecnologias e atualmente
+          dei início no bacharelado em Ciência da Computação na UNIP.
+        </p>
+      </div>
+    </main>
+    <div class="skills-container" id="skills">
+      <div class="skills-title title">
+        <h1>Habilidades</h1>
+      </div>
+      <div class="skills-box-content">
+        <div class="skills-content">
+          <img src="./assets/img/icon-html5.svg" alt="html5 icon">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione, suscipit dicta molestiae aut quia nam ab quam beatae cum vel impedit natus eos repellat unde ad sunt reprehenderit sequi!</p>
+        </div>
+        <div class="skills-content">
+          <img src="./assets/img/icon-css3.svg" alt="css3 icon">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iure aliquam, provident ad veniam officia facilis molestiae incidunt excepturi omnis possimus laboriosam placeat, neque tempore veritatis quidem eaque voluptate reprehenderit!</p>
+        </div>
+        <div class="skills-content">
+          <img src="./assets/img/icon-javascript.svg" alt="javascript icon">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem, ipsum quasi asperiores saepe consectetur quam, ducimus quaerat error a perferendis ab sed consequuntur nemo sit illo! Error, nobis officia.</p>
+        </div>
+        <div class="skills-content">
+          <img src="./assets/img/icon-git.svg" alt="git icon">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quaerat rerum eius, ducimus consequatur veritatis. Delectus, necessitatibus iure. Maxime, repellat. Repellendus, possimus earum? Nam incidunt quas at, laudantium aut mollitia.</p>
+        </div>
+      </div>
+    </div>
+    <div class="projects-container" id="projects">
+      <div class="projects-title title">
+        <h1>Projetos</h1>
+      </div>
+      <div class="project-box-content">
+        <div class="project-content">
+          <h2>Church of Geekness</h2>
+          <button class="project-button" onclick="toggle_project_description()">+</button>
+        </div>
+        <div class="project-description project-closed">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam praesentium repellendus obcaecati perspiciatis quam tempora? Quas quam earum minus sapiente nemo! Maiores corporis incidunt qui id? Vero sapiente quasi voluptatibus?</p>
+          <a href="https://filipeferreiraa.github.io/Church-Of-Geekness/" target="_blank">Ver Projeto</a>
+          <a href="https://filipeferreiraa.github.io/Church-Of-Geekness/" target="_blank">Ver Repositório</a>
+        </div>
+      </div>
+      <div class="project-box-content">
+        <div class="project-content" id="project-content">
+          <h2>Criptografia de textos</h2>
+          <button class="project-button" id="project-button" onclick="toggle_project_description_2()">+</button>
+        </div>
+        <div class="project-description project-closed" id="project-description">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam praesentium repellendus obcaecati perspiciatis quam tempora? Quas quam earum minus sapiente nemo! Maiores corporis incidunt qui id? Vero sapiente quasi voluptatibus?</p>
+          <a href="https://filipeferreiraa.github.io/Decodificador/" target="_blank">Ver Projeto</a>
+          <a href="https://filipeferreiraa.github.io/Decodificador/" target="_blank">Ver Repositório</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-container" id="contact">
+      <div class="contact-title title">
+        <h1>Contatos</h1>
+      </div>
+      <section class="contact-box-content">
+        <div class="contact-content">
+          <h1>Email</h1>
+          <p><img src="./assets/img/icon-outlook.png" alt="outlook icon"> contatofilipe.sferreira@outlook.com</p>
+        </div>
+      </section>
+      <section class="contact-box-content">
+        <div class="contact-content">
+          <h1>Celular</h1>
+          <p><img src="./assets/img/icon-whatsapp.png" alt="whatsapp icon"> +55 (11) 93230-5193</p>
+        </div>
+      </section>
+    </div>
+    <footer class="footer-container">
+      <h3>&copy; Desenvolvido por <a href="#home">Filipe Ferreira</a> 2023.</h3>
+    </footer>
+  </body>
+</html>

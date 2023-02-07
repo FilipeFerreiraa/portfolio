@@ -1,0 +1,407 @@
+@media screen and (min-width: 0px){
+  :root {
+    --color-black: rgb(0,  0,  0);
+    --color-white: rgb(255, 255,  255);
+    --color-semi-white: rgba(255, 255,  255, .1);
+    --color-grey: rgb(25, 25, 25);
+    --color-semi-blue: rgb(102, 150, 216);
+    --color-blue: rgb(62, 117, 195);
+    --color-green: rgb(18, 145, 11);
+    --color-yellow: rgb(212, 222, 6);
+    --color-purple: rgb(127, 11, 145);
+    --color-red: rgb(200, 13, 13);
+    --color-cream: rgb(211, 191, 113);
+  }
+  
+  html {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.362);
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  .title {
+    color: var(--color-white);
+    font-size: 7vw;
+    font-weight: 700;
+    height: 40px;
+    text-align: center;
+    width: 90%;
+  }
+
+  header.header-container {
+    align-items: center;
+    background-color: var(--color-black);
+    display: flex;
+    height: 90px;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  div.header-social-medias {
+    align-items: center;
+    display: flex;
+    height: 90px;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+
+  div.header-social-medias > a {
+    width: 25%;
+  }
+
+  div.header-social-medias > a > img {
+    width: 100%;
+  }
+
+  button.mobile-button {
+    background-color: var(--color-black);
+    border: none;
+    cursor: pointer;
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+  button.mobile-button > img {
+    width: 100%;
+  }
+
+  menu.mobile-menu-container {
+    align-items: center;
+    background-color: var(--color-blue);
+    box-shadow: 0px 5px 23px 0px var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: sticky;
+    top: 90px;
+    width: 100%;
+  }
+
+  menu.mobile-menu-container > ul {
+    display: block;
+    height: 100%;
+    line-height: 100px;
+    width: 100%;
+  }
+
+  menu.mobile-menu-container > ul > a, li {
+    color: var(--color-white);
+    font-size: 4.5vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-open {
+    height: 500px;
+    transition-duration: .3s;
+  }
+  .menu-closed {
+    height: 0px;
+    transition-duration: .3s;
+  }
+
+  div.introduction-div-container {
+    align-items: center;
+    background-color: var(--color-grey);
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  div.introduction-div-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 8vw;
+    font-weight: bold;
+    height: 300px;
+    justify-content: center;
+    line-height: 40px;
+    width: 90%;
+  }
+
+  div.introduction-div-content > h1, h3 {
+    color: var(--color-white);
+  }
+
+  div.introduction-div-content > h2 {
+    color: var(--color-blue);
+  }
+
+  div.personal-content-container {
+    align-items: center;
+    background-color: var(--color-grey);
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  a.personal-cv-download {
+    align-items: center;
+    background-color: var(--color-blue);
+    border: unset;
+    border-radius: 5px;
+    color: var(--color-white);
+    display: flex;
+    font-size: 4vw;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    width: 50%;
+  }
+
+  div.personal-image {
+    border: 3px solid var(--color-blue);
+    border-radius: 40px;
+    box-sizing: border-box;
+    height: 215px;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  div.personal-image > img {
+    height: 100%;
+    width: 100%;
+  }
+
+  main.about-container {
+    align-items: center;
+    background-color: var(--color-grey);
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  div.about-content {
+    color: var(--color-white);
+    display: flex;
+    font-size: 4vw;
+    height: 300px;
+    line-height: 25px;
+    text-align: justify;
+    width: 90%;
+  }
+
+  div.about-content p {
+    font-size: 4vw;
+    height: 100%;
+    width: 100%;
+  }
+
+  div.skills-container {
+    align-items: center;
+    background-color: var(--color-grey);
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  div.skills-box-content {
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-blue);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: scroll;
+    width: 90%;
+  }
+
+  div.skills-content {
+    display: flex;
+    color: var(--color-white);
+    font-size: 3.5vw;
+    height: 150px;
+    justify-content: space-around;
+    margin: 30px 0 30px 0;
+    width: 100%;
+  }
+
+  div.skills-content > img{
+    width: 25%;
+  }
+
+  div.skills-content > p{
+    text-align: justify;
+    width: 50%;
+  }
+
+  div.projects-container {
+    align-items: center;
+    background-color: var(--color-grey);
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    min-height: 600px;
+    width: 100%;
+  }
+
+  div.project-box-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  div.project-content {
+    background-color: var(--color-white);
+    border-radius: 5px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  div.project-content > h2 {
+    align-items: center;
+    display: flex;
+    font-size: 5vw;
+    font-weight: 600;
+    justify-content: center;
+    width: 70%;
+  }
+
+  div.project-content > button {
+    background-color: var(--color-blue);
+    border: none;
+    color: var(--color-white);
+    font-size: 7vw;
+    width: 30%;
+  }
+
+  div.project-description {
+    align-items: center;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .project-closed {
+    height: 0px;
+  }
+
+  .project-open {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: auto;
+    margin-bottom: 30px;
+    min-height: 230px;
+  }
+
+  div.project-description > p {
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  div.project-description > a {
+    align-items: center;
+    background-color: var(--color-blue);
+    border-radius: 5px;
+    color: var(--color-white);
+    display: flex;
+    font-size: 4vw;
+    height: 40px;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+    width: 50%;
+  }
+
+  div.contact-container {
+    align-items: center;
+    background-color: var(--color-grey);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  section.contact-box-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  div.contact-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  div.contact-content > h1 {
+    color: var(--color-white);
+    font-size: 5vw;
+    height: 40px;
+    text-align: center;
+    width: 90%;
+  }
+
+  div.contact-content > p {
+    align-items: center;
+    color: var(--color-white);
+    display: flex;
+    font-size: 4vw;
+    flex-direction: row;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  div.contact-content p > img {
+    margin: 0 10px 0 10px;
+    width: 7%;
+  }
+
+  footer.footer-container {
+    align-items: center;
+    background-color: var(--color-black);
+    display: flex;
+    font-size: 4vw;
+    height: 200px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer > h3 {
+    height: 50px;
+    text-align: center;
+    width: 90%;
+  }
+
+  footer > h3 > a {
+    text-decoration: underline;
+  }
+}
