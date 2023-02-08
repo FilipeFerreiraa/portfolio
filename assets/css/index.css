@@ -63,12 +63,15 @@
     width: 100%;
   }
 
+  div.header-nav {
+    display: none;
+  }
+
   button.mobile-button {
     background-color: var(--color-black);
     border: none;
     cursor: pointer;
-    max-height: 40px;
-    max-width: 40px;
+    width: 11%;
   }
 
   button.mobile-button > img {
@@ -170,7 +173,7 @@
     border: 3px solid var(--color-blue);
     border-radius: 40px;
     box-sizing: border-box;
-    height: 215px;
+    height: 170px;
     overflow: hidden;
     width: 50%;
   }
@@ -202,7 +205,7 @@
   }
 
   div.about-content p {
-    font-size: 4vw;
+    font-size: 4.5vw;
     height: 100%;
     width: 100%;
   }
@@ -232,7 +235,7 @@
   div.skills-content {
     display: flex;
     color: var(--color-white);
-    font-size: 3.5vw;
+    font-size: 3.8vw;
     height: 150px;
     justify-content: space-around;
     margin: 30px 0 30px 0;
@@ -270,7 +273,7 @@
     background-color: var(--color-white);
     border-radius: 5px;
     display: flex;
-    height: 100px;
+    height: 80px;
     justify-content: space-between;
     overflow: hidden;
     width: 100%;
@@ -317,7 +320,7 @@
   }
 
   div.project-description > p {
-    font-size: 4vw;
+    font-size: 4.5vw;
     width: 90%;
   }
 
@@ -403,5 +406,377 @@
 
   footer > h3 > a {
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  div.personal-image {
+    height: 190px;
+  }
+
+  div.about-content p {
+    font-size: 4vw;
+  }
+
+  div.skills-content {
+    font-size: 3.5vw;
+  }
+
+  div.project-description > p {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  button.mobile-button {
+    width: 10%;
+  }
+
+  div.personal-image {
+    width: 45%;
+  }
+
+  div.project-content {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 596px) {
+  button.mobile-button {
+    width: 8%;
+  }
+
+  menu.mobile-menu-container > ul > a, li {
+    font-size: 4vw;
+  }
+
+  div.introduction-div-content {
+    font-size: 6vw;
+  }
+
+  a.personal-cv-download {
+    width: 40%;
+  }
+
+  div.personal-image {
+    height: 215px;
+    width: 40%;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+  div.about-content p {
+    font-size: 3.5vw;
+  }
+
+  div.skills-box-content {
+    width: 75%;
+  }
+
+  div.skills-content {
+    font-size: 3vw;
+  }
+
+  div.projects-container {
+    min-height: 700px;
+  }
+
+  div.project-content > h2 {
+    font-size: 4vw;
+  }
+
+  div.project-description > p {
+    font-size: 3vw;
+  }
+
+  div.project-box-content {
+    width: 75%;
+  }
+
+  div.project-description > a {
+    font-size: 3vw;
+    width: 45%;
+  }
+
+  div.contact-content > p {
+    font-size: 3vw;
+  }
+
+  div.contact-content p > img {
+    width: 5%;
+  }
+
+  footer.footer-container {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.header-social-medias > a {
+    width: 20%;
+  }
+
+  button.mobile-button {
+    width: 6%;
+  }
+
+  menu.mobile-menu-container > ul > a, li {
+    font-size: 3vw;
+  }
+
+  div.introduction-div-content {
+    font-size: 4.5vw;
+  }
+
+  a.personal-cv-download {
+    font-size: 3vw;
+    width: 35%;
+  }
+
+  div.personal-image {
+    width: 32%;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+
+  div.about-content p {
+    font-size: 2.5vw;
+  }
+
+  div.skills-container {
+    height: 900px;
+  }
+
+  div.skills-box-content {
+    height: 700px;
+  }
+
+  div.skills-content {
+    font-size: 2.5vw;
+  }
+
+  div.project-content > button {
+    font-size: 5vw;
+  }
+
+  div.project-description > p {
+    font-size: 2.5vw;
+  }
+
+  div.project-description > a {
+    font-size: 2.5vw;
+    width: 40%;
+  }
+
+  div.projects-container {
+    min-height: 800px;
+  }
+
+  div.contact-content > p {
+    font-size: 2.5vw;
+  }
+
+  div.contact-content p > img {
+    width: 4%;
+  }
+
+  footer.footer-container {
+    font-size: 2.5vw;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  button.mobile-button {
+    display: none;
+  }
+
+  menu.mobile-menu-container {
+    display: none;
+  }
+
+  div.header-nav {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    width: 80%;
+  }
+
+  div.header-nav > ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  div.header-nav > ul > a > li {
+    font-size: 2vw;
+    width: 100%;
+  }
+
+  div.header-social-medias {
+    width: 20%;
+  }
+
+  div.introduction-div-content {
+    font-size: 3vw;
+  }
+
+  a.personal-cv-download {
+    font-size: 2vw;
+    width: 30%;
+  }
+
+  div.personal-image {
+    width: 23%;
+  }
+
+  .title {
+    font-size: 3vw;
+  }
+
+  div.about-content p {
+    font-size: 2vw;
+  }
+
+  div.skills-container {
+    height: 1200px;
+  }
+
+  div.skills-box-content {
+    height: auto;
+    overflow: hidden;
+    width: 60%;
+  }
+
+  div.skills-content {
+    font-size: 2vw;
+  }
+
+  
+  div.projects-container {
+    min-height: 1000px;
+  }
+  
+  div.project-box-content {
+    width: 60%;
+  }
+
+  div.project-content > button {
+    cursor: pointer;
+  }
+
+  div.project-content > h2 {
+    font-size: 3vw;
+  }
+
+  div.project-description > p {
+    font-size: 2vw;
+  }
+
+  div.project-description > a {
+    font-size: 2vw;
+    width: 35%;
+  }
+
+  div.contact-container {
+    height: 700px;
+  }
+
+  div.contact-content > h1 {
+    font-size: 2.5vw;
+  }
+
+  div.contact-content > p {
+    font-size: 2vw;
+  }
+
+  div.contact-content p > img {
+    width: 3%;
+  }
+
+  footer.footer-container {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  div.header-nav > ul > a > li {
+    font-size: 1vw;
+  }
+
+  div.header-social-medias > a {
+    width: 15%;
+  }
+
+  div.introduction-div-content {
+    font-size: 2vw;
+  }
+
+  a.personal-cv-download {
+    font-size: 1vw;
+    width: 20%;
+  }
+
+  div.personal-image {
+    width: 16%;
+  }
+
+  .title {
+    font-size: 2vw;
+  }
+
+  div.about-content p {
+    font-size: 1.5vw;
+  }
+
+  div.skills-content {
+    font-size: 1.5vw;
+  }
+
+  div.skills-content > img {
+    width: 15%;
+  }
+
+  div.project-box-content {
+    width: 45%;
+  }
+
+  div.project-content {
+    height: 125px;
+  }
+
+  div.project-content > h2 {
+    font-size: 2vw;
+  }
+
+  div.project-description > p {
+    font-size: 1.5vw;
+  }
+
+  div.project-description > a {
+    font-size: 1.5vw;
+    width: 30%;
+  }
+
+  div.contact-content > h1 {
+    font-size: 1.7vw;
+  }
+
+  div.contact-content > p {
+    font-size: 1.2vw;
+  }
+
+  div.contact-content p > img {
+    width: 2%;
+  }
+
+  footer.footer-container {
+    font-size: 1.3vw;
   }
 }

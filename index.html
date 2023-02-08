@@ -12,6 +12,15 @@
   </head>
   <body>
     <header class="header-container">
+      <div class="header-nav">
+        <ul>
+          <a href="#home" onclick="toggle_menu()"><li>Home</li></a>
+          <a href="#about" onclick="toggle_menu()"><li>Sobre Mim</li></a>
+          <a href="#skills" onclick="toggle_menu()"><li>Habilidades</li></a>
+          <a href="#projects" onclick="toggle_menu()"><li>Projetos</li></a>
+          <a href="#contact" onclick="toggle_menu()"><li>Contatos</li></a>
+        </ul>
+      </div>
       <button class="mobile-button" onclick="toggle_menu()"><img id="mobile-button" src="./assets/img/menu-icon.png" alt="menu icon"></button>
       <div class="header-social-medias">
         <a href="https://www.linkedin.com/in/filipeferreira20/" target="_blank"><img src="./assets/img/icon-linkedin.png" alt="linkedin icon"></a>
@@ -40,7 +49,7 @@
         <img src="./assets/img/profile-picture.jpg" alt="user picture">
       </div>
     </div>
-    <main class="about-container" id="#about">
+    <main class="about-container" id="about">
       <div class="about-title title">
         <h1>Sobre Mim</h1>
       </div>
